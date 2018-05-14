@@ -1,3 +1,7 @@
+<style lang="stylus">
+@import '../../source/style/ItemView.styl';
+</style>
+
 <template>
   <div class="item-view" v-if="item">
     <template v-if="item">

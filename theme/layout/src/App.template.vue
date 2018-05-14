@@ -1,3 +1,7 @@
+<style lang="stylus">
+@import '../../source/style/App.styl'
+</style>
+
 <template>
   <div id="app">
     <header class="header">

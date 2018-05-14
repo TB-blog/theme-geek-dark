@@ -1,3 +1,7 @@
+<style lang="stylus">
+@import '../../../source/style/Item.styl';
+</style>
+
 <template>
   <li class="blogs-item" :class="{ 'list-item-left': type === 'blog' }">
     <span class="score">{{ item.stargazers_count }}</span>
