@@ -4,8 +4,7 @@ node_modules/
 /build
 /public
 /src
-/theme/*
-!/theme/*
+/theme!*
 dist/
 npm-debug.log
 yarn-error.log
