@@ -3,8 +3,8 @@
 An official theme designed for TB.
 
 <p align="center">
-  <a href="https://github.com/TB-blog/theme-geek-morning" target="_blank">
-    <img src="screenshoot.png" width="700px">
+  <a href="https://github.com/TB-blog/theme-geek-dark" target="_blank">
+    <img src="screenshot.png" width="700px">
     <br>
     Source code
   </a>
