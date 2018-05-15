@@ -53,8 +53,8 @@
         <a v-show="open && item.comments"
           class="button"
           :href="`https://github.com/${this.$_config.user}/${this.$_config.repo}/issues/${item.number}#new_comment_field`"
-          >Add comments</a>
-
+          target="_blank"
+          rel="noopener">Add comments</a>
       </div>
     </template>
   </div>
