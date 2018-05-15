@@ -1,6 +1,6 @@
 @require './md2html-theme/theme.styl'
 
-.item-view-header, .item-view-footer
+.item-view-header, .item-view-footer, .item-view-comments
   padding 1.8em 2em 1em
   h1
     font-size 1.5em
@@ -19,6 +19,65 @@
     line-height 2em
     a
       color #828282
+
+.item-view-comments
+  margin-bottom 40px
+  &:before
+    display block
+    width 30%
+    content ''
+    height 1px
+    background #444
+    margin 50px auto
+  .content
+    list-style none
+    margin-top 20px
+    padding 10px 0 10px 70px
+    li
+      border 1px solid #686868
+      border-radius 4px
+      margin-bottom 50px
+      padding 20px
+      position relative
+      .avatar
+        border 1px solid #eee
+        position absolute
+        left -68px
+        top 0
+        width 48px
+        height 48px
+        border-radius 50%
+        overflow hidden
+        width 36px
+        height 36px
+        img
+          display block
+          width 100%
+          height auto
+      .body
+        .markdown-body
+          padding-top 20px
+          h1, h2, h3, h4, h5, h6, p
+            color #fff
+        & > span
+          color #828282
+  .button
+    margin 50px auto 0
+    display block
+    text-align center
+    max-width 170px
+    border 2px solid #444
+    color #686868
+    border-radius 5px
+    font-size 14px
+    height 32px
+    line-height 32px
+    background #1d1f21
+    overflow hidden
+    position relative
+    cursor pointer
+    &:focus
+      outline none
 
 .content
   padding 0 2em
@@ -84,6 +143,13 @@
     color #3eaf7c
 
 @media (max-width 600px)
+  .item-view-comments
+    .avatar
+      display none
+  .item-view-comments .content
+      list-style none
+      margin-top 20px
+      padding 10px 0 10px 0
   .item-view-header
     h1
       font-size 1.25em
